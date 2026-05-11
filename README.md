@@ -8,7 +8,7 @@
 
 **Mine from any machine using the Equium protocol.**
 
-[Docs](https://annaumixyz.xyz/docs) · [GitHub](https://github.com/annaumixyz/annaumixyz-equium) · [Follow on X](https://x.com/Annaumixyz)
+ [GitHub](https://github.com/annaumixyz/annaumixyz-equium) · [Follow on X](https://x.com/annaumi_xyz)
 
 </div>
 
