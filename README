@@ -1,0 +1,142 @@
+<div align="center">
+
+<img src="assets/logo.png" alt="Equium" width="140" />
+
+# Annaumixyz Equium
+
+### CPU-mineable infrastructure on Solana
+
+**Mine from any machine using the Equium
+
+[GitHub](https://github.com/annaumixyz/annaumixyz-equium) · [Follow on X](https://x.com/annaumi_xyz)
+
+</div>
+
+---
+
+## ✦ About
+
+This repository contains the Equium mining infrastructure customized for the Annaumixyz ecosystem.
+
+Equium is a CPU-oriented proof-of-work protocol designed to run efficiently on common hardware using Equihash. The project includes browser miners, desktop miners, and a CLI miner implementation built with Rust.
+
+This repository is intended for educational purposes, self-hosted mining experiments, and infrastructure development on Solana.
+
+---
+
+## ✦ Features
+
+- CPU-friendly mining algorithm
+- Rust-based high performance miner
+- Browser miner support
+- Desktop application support
+- CLI miner for VPS/server deployments
+- Solana integration
+- Multi-platform support (Linux, Windows, macOS)
+
+---
+
+## ✦ Requirements
+
+Before running the project, install:
+
+- Rust (latest stable)
+- Cargo
+- Git
+- Solana CLI tools (optional)
+
+---
+
+## ✦ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/annaumixyz/annaumixyz-equium.git
+cd annaumixyz-equium
+```
+
+Build the project:
+
+```bash
+cargo build --release
+```
+
+---
+
+## ✦ CLI Miner
+
+Build the CLI miner:
+
+```bash
+cargo build -p annaumixyz-cli-miner --release
+```
+
+Run the miner:
+
+```bash
+./target/release/annaumixyz-miner \
+  --rpc-url https://mainnet.helius-rpc.com/?api-key=YOUR_KEY \
+  --keypair ~/.config/solana/id.json
+```
+
+---
+
+## ✦ Configuration
+
+Configuration files are located inside:
+
+```bash
+config/
+```
+
+You can customize:
+
+- RPC endpoints
+- Wallet/keypair paths
+- Mining parameters
+- Thread usage
+- Network settings
+
+---
+
+## ✦ Wallet Setup
+
+Generate a Solana wallet:
+
+```bash
+solana-keygen new
+```
+
+Your keypair file will be used by the miner for signing transactions.
+
+---
+
+## ✦ Recommended RPC
+
+For stable mining performance, use a dedicated RPC provider such as:
+
+- Helius
+- QuickNode
+- Alchemy
+
+Public RPC endpoints may rate-limit requests during heavy mining activity.
+
+---
+
+## ✦ Project Structure
+
+```bash
+clients/        # Browser, desktop, and CLI miners
+programs/       # Solana on-chain programs
+config/         # Configuration files
+scripts/        # Helper scripts
+```
+
+---
+
+## ✦ License
+
+Apache-2.0
+
+This project is open-source and intended for research, development, and educational use.
