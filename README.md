@@ -69,13 +69,13 @@ cargo build --release
 Build the CLI miner:
 
 ```bash
-cargo build -p annaumixyz-cli-miner --release
+cargo build -p equium-cli-miner --release
 ```
 
 Run the miner:
 
 ```bash
-./target/release/annaumixyz-miner \
+./target/release/equium-miner \
   --rpc-url https://mainnet.helius-rpc.com/?api-key=YOUR_KEY \
   --keypair ~/.config/solana/id.json
 ```
